@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Wild west</string>
+    <string name="desserts">Desserts</string>
+    <string name="main_course">Main Course</string>
+    <string name="starters">Starters</string>
+    <string name="wild_west">Wild West</string>
+    <string name="dish_image" />
+</resources>

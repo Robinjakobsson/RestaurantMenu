@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style=""
+    android:id="@+id/main"
+    android:background="@color/Fourth"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:elevation="14dp"
+        android:textSize="45sp"
+        android:layout_gravity="center"
+        android:textColor="@color/Secondary"
+        android:fontFamily="@font/rye_regular"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="@string/wild_west">
+
+    </TextView>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButton"
+        android:elevation="14dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:fontFamily="@font/rye_regular"
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/startersButton"
+            android:textColor="@color/Secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/starters"
+            />
+
+        <Button
+            android:fontFamily="@font/rye_regular"
+            android:id="@+id/mainCourseButton"
+            android:textColor="@color/Secondary"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_course" />
+
+        <Button
+            android:fontFamily="@font/rye_regular"
+            android:id="@+id/dessertsButton"
+            android:textColor="@color/Secondary"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desserts" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clipToPadding="false">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
